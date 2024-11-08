@@ -1,0 +1,114 @@
+---
+import Article from '@/components/Article.astro'
+import Arow from '@/components/icons/Arow.astro'
+---
+
+<Article title='Mis Trabajos'>
+  <div>
+    <span class="card">
+
+      <span class="card_img">
+        <img src="/NAHUELDEVLOGO.png" alt="ja">
+      </span>
+      <span class="card_data">
+        <h3>ProjectOne</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
+      </span>
+    </span>
+
+    <span class="card">
+
+      <span class="card_img">
+        <img src="/NAHUELDEVLOGO.png" alt="ja">
+      </span>
+      <span class="card_data">
+        <h3>ProjectOne</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
+      </span>
+    </span>
+    
+    <span class="card">
+
+      <span class="card_img">
+        <img src="/NAHUELDEVLOGO.png" alt="ja">
+      </span>
+      <span class="card_data">
+        <h3>ProjectOne</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
+      </span>
+    </span>
+
+    <span class="card">
+
+      <span class="card_img">
+        <img src="/NAHUELDEVLOGO.png" alt="ja">
+      </span>
+      <span class="card_data">
+        <span class="data_live">
+
+          <h3>ProjectOne</h3>
+          <a href="#" target="_blank">
+            <Arow/>
+          </a>
+        </span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
+      </span>
+    </span>
+  </div>
+
+</Article>
+
+<style>
+  div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .card{
+    width: 300px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff1c;
+  }
+  
+  .card_img{
+    width: 100%;
+  }
+  .card_img img{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .card_data{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card_data h3{
+    font-weight: 550;
+    font-size: 1.4rem;
+  }
+
+  .card_data p{
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 550;
+    text-align: center;
+  }
+  .data_live{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .data_live a{
+    color: #fff;
+  }
+</style>

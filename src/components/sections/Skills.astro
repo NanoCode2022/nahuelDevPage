@@ -1,0 +1,41 @@
+---
+import Article from '@/components/Article.astro'
+import Angular from '@/components/icons/Angular.astro'
+import React from '@/components/icons/React.astro'
+import Node from '@/components/icons/Node.astro'
+import Html from '@/components/icons/Html.astro'
+import Sql from '@/components/icons/Sql.astro'
+import Git from '@/components/icons/Git.astro'
+import Tailwind from '@/components/icons/Tailwind.astro'
+import Javascript from '@/components/icons/Javascript.astro'
+import Css from '@/components/icons/Css.astro'
+
+---
+
+<Article>
+  <span>
+    <Html/>
+    <Css/>
+    <Javascript/>
+    <Tailwind/>
+    <Angular/>
+    <React/>
+    <Node/>
+    <Sql/>
+    <Git/>
+  </span>
+</Article>
+
+
+<style>
+  span{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+  }
+</style>

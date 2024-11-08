@@ -1,0 +1,73 @@
+---
+import Section from '@/components/Section.astro'
+import Github from '@/components/icons/Github.astro'
+import Linkedin from '@/components/icons/Linkedin.astro'
+import Instagram from '@/components/icons/Instagram.astro'
+---
+<Section>
+    <article class="head_titles">
+      <span class="container_titles">
+        <p>Desarrolador</p>
+        <h1>FRONT-END</h1>
+      </span>
+      
+      <span class="container_buttons">
+
+        <span class="icons">
+          <a href="https://github.com/NanoCode2022" target="_blank"><Github/></a>
+          <a href="https://www.linkedin.com/in/nahuel-gerez-6927b0239/" target="_blank"><Linkedin/></a>
+          <a href="https://www.instagram.com/nahuel_dev" target="_blank"><Instagram/></a>
+        </span>
+        <a href="/MyCvNahuel.pdf" target="_blank">
+          <button>Download CV</button>
+        </a>
+      </span>
+    </article>
+</Section>
+
+
+<style>
+  .container_buttons{
+    display: flex;
+    gap: 40px;
+  }
+  .icons{
+    display: flex;
+    gap: 12px;
+  }
+ .icons a{
+    color: #000;
+  }
+
+  .head_titles{
+    position: fixed;
+    width: 60%;
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .container_titles{
+    display: flex;
+    flex-direction: column;
+  }
+  .container_titles p{
+    font-size:3rem;
+  }
+  .container_titles h1{
+    font-size: 4rem;
+    color: #000;
+    padding-left: 10px;
+  }
+
+
+  button{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+</style>

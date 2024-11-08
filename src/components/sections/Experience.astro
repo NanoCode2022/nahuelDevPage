@@ -1,0 +1,106 @@
+---
+import Article from '@/components/Article.astro'
+---
+<Article title='Experiencia'>
+ <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <h3>2023</h3>
+
+                <p>Descripción de la experiencia en 2023.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <h3>2022</h3>
+
+                <p>Descripción de la experiencia en 2022.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <h3>2021</h3>
+
+                <p>Descripción de la experiencia en 2021.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <h3>2020</h3>
+
+                <p>Descripción de la experiencia en 2020.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+</Article>
+
+<style>
+.timeline {
+
+    position: relative;
+
+    max-width: 80%;
+
+    margin: auto;
+
+}
+
+
+.timeline-item {
+    position: relative;
+    margin: 40px 0;
+}
+
+
+.timeline-content {
+    background-color: #000;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+}
+
+
+.timeline-content h3 {
+    margin: 0;
+}
+
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+}
+
+
+p{
+  font-size: 1.2rem;
+}
+
+
+</style>
