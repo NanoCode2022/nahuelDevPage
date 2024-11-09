@@ -1,56 +1,24 @@
 ---
 import Article from '@/components/Article.astro'
+import {experience} from '@cv'
 ---
 <Article title='Experiencia'>
  <div class="timeline">
 
+   {experience.map((info)=>(
+        
         <div class="timeline-item">
 
             <div class="timeline-content">
 
-                <h3>2023</h3>
+              <h3>{info.year}</h3>
 
-                <p>Descripción de la experiencia en 2023.</p>
-
-            </div>
-
-        </div>
-
-        <div class="timeline-item">
-
-            <div class="timeline-content">
-
-                <h3>2022</h3>
-
-                <p>Descripción de la experiencia en 2022.</p>
+              <p>{info.description}</p>
 
             </div>
 
         </div>
-
-        <div class="timeline-item">
-
-            <div class="timeline-content">
-
-                <h3>2021</h3>
-
-                <p>Descripción de la experiencia en 2021.</p>
-
-            </div>
-
-        </div>
-
-        <div class="timeline-item">
-
-            <div class="timeline-content">
-
-                <h3>2020</h3>
-
-                <p>Descripción de la experiencia en 2020.</p>
-
-            </div>
-
-        </div>
+   ))}
 
     </div>
 </Article>

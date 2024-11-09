@@ -1,0 +1,60 @@
+{
+  "aboutMe": {
+    "name": "Nahuel",
+    "title": "Desarrollador Front-End",
+    "description": "Hola, soy Nahuel. Un desarrollador Frontend con una formación autodidacta, adquirida a través de recursos como plataformas en línea y cursos especializados en desarrollo web, JavaScript y desarrollo fullstack. A lo largo de mi carrera, he cultivado una experiencia práctica diaria que me ha permitido fortalecer mis habilidades técnicas. Me especializo en el desarrollo frontend, particularmente con React.js y AngularJs."
+  },
+  "experience": [
+    {
+      "year": "2021 - 2022",
+      "description": "Curson en Coderhouse de Desarrollo Web"
+    },
+    {
+      "year": "2022 - 2022",
+      "description": "Curso en Coderhouse de JavaScript"
+    },
+    {
+      "year": "2022 - 2023",
+      "description": "Argentina Programa Curso de Fullstack (AngularJs,Java)"
+    },
+    {
+      "year": 2023,
+      "description": "Aprendo ReactJs de manera Autodidacta"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Web de Rick and Morty",
+      "img": "/projects_pictures/rickandmorty.png",
+      "url": "#",
+      "description": "(AngularJs,API) Consumiendo la API de rickandmorty cree una app donde se muestran los personajes y su dicha informacion tambien cuenta con paginacion"
+    },
+    {
+      "name": "Web de Buscador de Imagenes",
+      "img": "/projects_pictures/buscadorReact.png",
+      "url": "#",
+      "description": "(ReactJs, API) Consumiendo la API de pixabay cree una app donde uno puede muscar imagenes."
+    },
+    {
+      "name": "Web de Blog",
+      "img": "/projects_pictures/webBlog.png",
+      "url": "#",
+      "description": "(ReactJs, NodeJs, MySQL) App donde mediante una Base de Datos uno puede crear blogs y ver los mismos"
+    },
+    {
+      "name": "Web de Managment Event",
+      "img": "/projects_pictures/managmentEvent.png",
+      "url": "#",
+      "description": "(ReactJs, NodeJs, MySQL) App donde mediante una Base de Datos uno puede ver, crear, editar y eliminar eventos tambien cuenta con sistema de busqueda por nombre del evento"
+    },
+    {
+      "name": "Web Interactive Card",
+      "img": "/projects_pictures/interativeCard.png",
+      "url": "#",
+      "description": "(Html, Css, JavaScript) App donde simula el llenado de un formulario se va llenado dicha informacion en una tarjeta de credito"
+    }
+  ],
+  "services": {
+    "description": "Creo páginas web personalizadas que se ajustan a las necesidades específicas de cada proyecto. Actualmente, me especializo en la creación de sitios web informativos, claros y fáciles de navegar. Todos mis diseños son responsive, lo que significa que se adaptan perfectamente a cualquier dispositivo, desde ordenadores hasta móviles. Mi enfoque es proporcionar una experiencia de usuario intuitiva y un diseño atractivo que refleje la identidad de tu marca."
+  }
+}

@@ -1,59 +1,30 @@
 ---
 import Article from '@/components/Article.astro'
 import Arow from '@/components/icons/Arow.astro'
+import {projects} from '@cv'
 ---
 
 <Article title='Mis Trabajos'>
   <div>
+    {projects.map((project)=>(
+      
     <span class="card">
 
       <span class="card_img">
-        <img src="/NAHUELDEVLOGO.png" alt="ja">
-      </span>
-      <span class="card_data">
-        <h3>ProjectOne</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
-      </span>
-    </span>
-
-    <span class="card">
-
-      <span class="card_img">
-        <img src="/NAHUELDEVLOGO.png" alt="ja">
-      </span>
-      <span class="card_data">
-        <h3>ProjectOne</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
-      </span>
-    </span>
-    
-    <span class="card">
-
-      <span class="card_img">
-        <img src="/NAHUELDEVLOGO.png" alt="ja">
-      </span>
-      <span class="card_data">
-        <h3>ProjectOne</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
-      </span>
-    </span>
-
-    <span class="card">
-
-      <span class="card_img">
-        <img src="/NAHUELDEVLOGO.png" alt="ja">
+        <img src={project.img} alt={project.name}>
       </span>
       <span class="card_data">
         <span class="data_live">
 
           <h3>ProjectOne</h3>
-          <a href="#" target="_blank">
+          <a href={project.url} target="_blank">
             <Arow/>
           </a>
         </span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolores quibusdam sunt officia magni enim.</p>
+        <p>{project.description}</p>
       </span>
     </span>
+    ))}
   </div>
 
 </Article>
@@ -79,7 +50,7 @@ import Arow from '@/components/icons/Arow.astro'
   }
   .card_img img{
     width: 300px;
-    height: 300px;
+    height: 200px;
     margin: auto;
     aspect-ratio: 1/1;
   }
@@ -110,5 +81,15 @@ import Arow from '@/components/icons/Arow.astro'
   }
   .data_live a{
     color: #fff;
+  }
+
+  @media screen and (max-width: 850px) {
+
+
+    div{
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center
+    }
   }
 </style>
