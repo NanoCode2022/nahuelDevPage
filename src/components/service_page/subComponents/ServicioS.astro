@@ -1,0 +1,144 @@
+---
+import BodySection from '@/components/service_page/BodySection.astro'
+---
+<BodySection>
+  <div>
+    <span class="content_titles">
+      <h2>Mis Planes</h2>
+      <p>Te ofresco soluciones rápidas y personalizadas para sitios web estáticos, ideales para landing pages, páginas informativas y marketing de afiliados. Utilizo Astro para garantizar un rendimiento excelente y un diseño moderno. Todos nuestros planes incluyen integración de formularios, botones de afiliados y medidas de seguridad.</p>
+    </span>
+    <article class="container_plans">
+      <div class="card">
+        <h2 class="card-title">Básico</h2>
+        <p class="card-description">Ideal para individuos que buscan una solución simple y efectiva.</p>
+        <ul class="card-features">
+          <li>✓ Diseño básico de una página (una sola página)</li>
+          <li>✓ Plantilla personalizada (diseño a medida)</li>
+          <li>✓ Contenido estático (texto, imágenes, links)</li>
+          <li>✓ Formulario de contacto simple</li>
+          <li>✓ Integración de enlaces a sitios externos</li>
+          <li>✓ Optimización básica para SEO (títulos, meta descripciones, etc.)</li>
+          <li>✓ Adaptacion Responsive</li>
+          <li><strong>Entrega:</strong> 7 - 10 dias</li>
+          <li><strong>A partir de:</strong> US$60 </li>
+        </ul>
+        <a href="/contact">
+          <button class="card-button">Contactar</button>
+        </a>
+      </div>
+
+
+      <div class="card">
+        <h2 class="card-title">Estandar</h2>
+        <p class="card-description">Personas que necesitan una página informativa o un sitio con múltiples secciones para mostrar productos/servicios con más detalles.</p>
+        <ul class="card-features">
+          <li>✓ Páginas adicionales (como "Sobre nosotros", "Servicios", "Contacto", etc.)</li>
+          <li>✓ Diseño personalizado basado en tu Marca (colores, tipografía, etc.)</li>
+          <li>✓ Optimización básica para SEO (títulos, meta descripciones, etc.)</li>
+          <li>✓ Integración de formularios de contacto y botones de afiliados</li>
+          <li>✓ Responsive (adaptación para móviles)</li>
+          <li><strong>Entrega:</strong> 10 - 18 dias</li>
+          <li><strong>A partir de:</strong> US$80 </li>
+        </ul>
+        <a href="/contact">
+          <button class="card-button">Contactar</button>
+        </a>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Mantenimiento y Actualización</h2>
+        <p class="card-description">Clientes que necesitan soporte continuo o actualizaciones periódicas para sus sitios web estáticos.</p>
+        <ul class="card-features">
+          <li>✓ Actualizaciones periódicas del contenido (mensuales o trimestrales)</li>
+          <li>✓ Optimización continua de la velocidad</li>
+          <li>✓ Monitoreo de seguridad y backups</li>
+          <li>✓ Soporte técnico (resolución de problemas y ajustes pequeños)</li>
+          <li>✓ Tiempo de respuesta de 24 a 48 horas</li>
+          <li>✓ Actualizaciones de SEO según tendencias del mercado</li>
+          <li>✓ Entrega mensual o según acuerdo</li>
+          <li><strong>A partir de:</strong> US$20/mes </li>
+        </ul>
+        <a href="/contact">
+        <button class="card-button">Contactar</button>
+        </a>
+      </div>
+    </article>
+  </div>
+</BodySection>
+
+<style>
+  .content_titles h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  .content_titles p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 60px;
+    color: #333;
+  }
+
+  .container_plans {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 50px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .card-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .card-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .card-features li {
+    margin: 10px 0;
+    color: #444;
+  }
+
+  .card-button {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .card-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+</style>

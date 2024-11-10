@@ -1,0 +1,76 @@
+---
+import BodySection from '@/components/service_page/BodySection.astro'
+---
+<BodySection>
+  <div class="container_head">
+    <span class="content">
+      <h1>CREO TU PAGINA WEB</h1>
+      <p>Transforma tu presencia online con un sitio web estático, moderno y optimizado. Ya sea una landing page, una página informativa,etc. Te ofrezco soluciones personalizadas que combinan diseño atractivo y alto rendimiento. ¡Comienza hoy mismo a destacar en la era Digital!</p>
+    </span>
+    <span class="container_img">
+      <img src="/img_web_main.png" alt="">
+    </span>
+
+  </div>
+</BodySection>
+
+
+<style>
+
+  .container_head{
+    width: 100%;
+    height: calc(100vh - 71px);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .content h1{
+    font-size: 4rem;
+  }
+  .content p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 50px;
+  }
+
+  .container_img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+
+  .container_img img{
+    width: 100%;
+  }
+  @media screen and (max-width:850px) {
+
+    .container_head{
+      flex-direction: column-reverse;
+    }
+
+    .container_img{
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .content{
+      width: 100%;
+      text-align: center;
+    }
+    
+  }
+</style>
+
+  
+
+
+
+
+

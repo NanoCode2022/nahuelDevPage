@@ -1,0 +1,27 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+import Home from '@/components/sections/Home.astro'
+import Main from '@/components/sections/Main.astro'
+---
+
+<Layout title="Nahuel Dev">
+	<main>
+    <Home/>
+    <Main/>
+	</main>
+</Layout>
+
+<style>
+
+  main{
+    width: 100vw;
+    display: flex;
+  }
+
+  @media screen and (max-width: 850px) {
+    main{
+      flex-direction: column;
+    }
+  }
+</style>

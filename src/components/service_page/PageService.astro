@@ -1,0 +1,21 @@
+---
+import HeadService from "@/components/service_page/HeadService.astro"
+import ServicioS from "@/components/service_page/subComponents/ServicioS.astro"
+import PlantillasS from "@/components/service_page/subComponents/PlantillasS.astro"
+import PieS from "@/components/service_page/subComponents/PieS.astro"
+---
+<div class="container_page_service">
+
+  <HeadService/>
+  <ServicioS/>
+  <PlantillasS/>
+  <PieS/>
+</div>
+
+<style>
+  .container_page_service{
+    width: 100%;
+    height: calc(100vh - 71px);
+    padding: 71px 0 0;
+  }
+</style>

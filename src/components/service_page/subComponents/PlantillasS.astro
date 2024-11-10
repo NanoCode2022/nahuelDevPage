@@ -1,0 +1,126 @@
+---
+
+import BodySection from '@/components/service_page/BodySection.astro'
+---
+<BodySection>
+  <div class="container_plantillas">
+   <h2>Mis Plantillas</h2> 
+   <p>Explora una selección de mis plantillas personalizadas y proyectos anteriores. Cada uno de ellos está diseñado con Astro para ofrecer un rendimiento rápido, diseño atractivo y funcionalidad adaptada a las necesidades de cada cliente.</p>
+    <div class="carousel">
+
+        <div class="carousel-wrapper">
+
+
+            <div class="carousel-item">
+
+              <img src="/templates/template_two.png" alt="Imagen 4">
+
+            </div>
+
+            <div class="carousel-item">
+
+              <img src="/img_web_main.png" alt="Imagen 5">
+
+            </div>
+
+        </div>
+
+        <button class="carousel-button prev">❮</button>
+
+        <button class="carousel-button next">❯</button>
+
+    </div>
+  </div>
+</BodySection>
+
+
+<style>
+.container_plantillas h2{
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.container_plantillas p{
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 0 60px 30px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    background-size: contain;
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+</style>
+
+<script>
+  const carouselWrapper = document.querySelector('.carousel-wrapper');
+const items = document.querySelectorAll('.carousel-item');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function updateCarousel() {
+    // Mueve el carrusel a la posición correcta
+    const offset = -currentIndex * 100; // Cada imagen ocupa el 100% del ancho
+    carouselWrapper!.style.transform = `translateX(${offset}%)`;
+}
+
+// Manejo del botón "anterior"
+prevButton!.addEventListener('click', () => {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+    updateCarousel();
+});
+
+// Manejo del botón "siguiente"
+nextButton!.addEventListener('click', () => {
+    currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+});
+</script>
