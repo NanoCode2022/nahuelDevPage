@@ -42,19 +42,29 @@ import PieS from "@/components/service_page/subComponents/PieS.astro"
   <PieS/>
 
 <script>
-  const $form = document.querySelector('#contact-form')
-  const $button = document.querySelector('#send_email')
+  // Selección del formulario y botón
+  const $form = document.querySelector('#contact-form') as HTMLFormElement;
+  const $button = document.querySelector('#send_email') as HTMLAnchorElement; // Se hace un 'type assertion' aquí
 
-  $form.addEventListener('submit', handleSubmit)
+  // Se asegura que el formulario tenga un eventListener
+  $form!.addEventListener('submit', handleSubmit);
 
-  function handleSubmit(event:any){
-    event.preventDefault()
-    const form = new FormData(this)
-    console.log(form)
-    $button.setAttribute('href', `mailto:nahueldev.software@gmail.com?subject=Mensaje de nahueldev.online de ${form.get('name')}&body=email:${form.get('email')} message:${form.get('massage')}`)
-    $button.click()
+  // Función que maneja el evento submit
+    function handleSubmit(this:HTMLFormElement,event: Event) {
+    event.preventDefault(); // Prevenimos el comportamiento predeterminado del formulario
+
+    // Creamos un objeto FormData desde el formulario
+    const form = new FormData(this); // Aseguramos que 'this' es el formulario
+
+    // Verificamos los valores que estamos obteniendo del formulario
+    console.log(form);
+
+    // Establecemos el atributo 'href' del botón de envío
+    $button!.setAttribute('href', `mailto:nahueldev.software@gmail.com?subject=Mensaje de nahueldev.online de ${form.get('name')}&body=email:${form.get('email')} message:${form.get('message')}`);
+
+    // Llamamos al método click() de $button
+    $button!.click();
   }
-
 </script>
 
 

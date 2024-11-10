@@ -99,7 +99,7 @@ import BodySection from '@/components/service_page/BodySection.astro'
 </style>
 
 <script>
-  const carouselWrapper = document.querySelector('.carousel-wrapper');
+  const carouselWrapper = document.querySelector('.carousel-wrapper') as HTMLElement;
 const items = document.querySelectorAll('.carousel-item');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
